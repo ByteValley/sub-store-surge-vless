@@ -18,8 +18,7 @@ Use this module in place of the official Sub-Store Surge module so only one modu
 
 - `Surge-Sub-Store-VLESS.sgmodule`: custom Surge module.
 - `sub-store-1-vless.min.js`: compiled module script.
-- `sub-store-surge-vless.patch`: patch against the upstream source revision below.
-- `sub-store-surge-vless-package.zip`: package with the modified source files, README, and AGPL-3.0 license.
+- [Source package ZIP](https://github.com/ByteValley/sub-store-surge-vless/raw/refs/heads/main/sub-store-surge-vless-package.zip): modified parser and producer sources, upstream patch, build notes, and AGPL-3.0 license.
 
 ## Supported VLESS combinations
 
@@ -34,6 +33,6 @@ Surge requires iOS 6.0.0+ or Mac 6.12.0+. XHTTP, HTTPUpgrade, mKCP, and VLESS En
 Base repository: [sub-store-org/Sub-Store](https://github.com/sub-store-org/Sub-Store)  
 Base revision: `d8fc0e69a7f472485d338049b85d20d3f44b41a5` (Sub-Store 2.44.7)
 
-Rebuild from that revision by applying `sub-store-surge-vless.patch`, then run `pnpm install --frozen-lockfile` and `pnpm bundle:esbuild` in `backend/`. The module bundle is generated at `backend/dist/sub-store-1.min.js`.
+The source ZIP includes the modified source files and patch for this exact revision. To rebuild, apply the patch to that revision, then run `pnpm install --frozen-lockfile` and `pnpm bundle:esbuild` in `backend/`. The bundle is generated at `backend/dist/sub-store-1.min.js`.
 
 Bundle SHA-256: `9c485e7220a4bace655bba2cd58798598dbe26ef5df86bf3a903e5715e7c251c`
